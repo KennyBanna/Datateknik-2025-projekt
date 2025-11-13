@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "question": "Vilket av dess ämnen tillhör inte en av de tre huvudkategorierna i hållbar utveckling?",
+        "options":
+            {
+                "a": "Ekologisk utveckling",
+                "b": "Social utveckling",
+                "c": "Ekonomisk utveckling",
+                "d": "Ergonomisk utveckling"
+            },
+        "correctAnswer": "d"
+    },
+    {
+        "id": 2,
+        "question": "Vilken organisation introducerade termen hållbar utveckling internationellt?",
+        "options":
+            {
+                "a": "Förenta Nationerna",
+                "b": "Världskommissionen",
+                "c": "Världshälsoorganisationen",
+                "d": "Europeiska Unionen"
+            },
+        "correctAnswer": "b"
+    }
+]

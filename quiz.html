@@ -1,23 +1,54 @@
 <html>
-    <header>
+    <head>
         <title>Quiz</title>
         <link
-            rel="stylesheet"
-            href="styles/style.css"
+        rel="stylesheet"
+        href="styles/style.css"
         />
-    </header>
+        <link rel="stylesheet" href="styles/quizStyle.css">
+        <script src="scripts/quiz.js"></script>
+    </head>
     <body>
-        <ol id="quiz-question-list">
-            <li>all</li>
-            <li>work</li>
-            <li>and</li>
-            <li>no</li>
-            <li>play</li>
-            <li>makes</li>
-            <li>Jack</li>
-            <li>a</li>
-            <li>dull</li>
-            <li>boy</li>
-        </ol>
+        <header>
+        </header>
+        <div id="quiz-container">
+            <h1>QUIZ</h1>
+            
+            <h2>Fråga <span id="question-index-span"></span></h2>
+            <label id="question-label"></label>
+            <div id="quiz-question-container">
+
+                <label id="label-a"></label>
+                <input type="radio" name="answer" id="input-a" value="a">
+
+                <label id="label-b"></label>
+                <input type="radio" name="answer" id="input-b" value="a">
+                
+                <label id="label-c"></label>
+                <input type="radio" name="answer" id="input-c" value="a">
+                
+                <label id="label-d"></label>
+                <input type="radio" name="answer" id="input-d" value="a">
+            </div>
+            <button id="answer-button" class="quiz-button">Svara</button>
+
+        </div>
+        <footer>
+            <div><a href="https://www.ch.lu.se/">Lunds Universitet</a></div>
+            <div>
+                <p>
+                    <a href="https://www.snowflakeeducation.com/en/"
+                        >Snowflake Education</a
+                    >
+                </p>
+            </div>
+            <div>
+                <p>Oskar</p>
+                <p>Henrik</p>
+                <p>Essi</p>
+                <p>Seb</p>
+                <p>Filippa</p>
+            </div>
+        </footer>
     </body>
 </html>

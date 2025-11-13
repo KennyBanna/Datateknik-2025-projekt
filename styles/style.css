@@ -17,7 +17,7 @@ body {
     background-color: whitesmoke;
     display: grid;
     grid-template-columns: auto 150px 500px 150px auto;
-    grid-template-rows: auto min-content auto;
+    grid-template-rows: auto min-content max(min-content, 300px);
     grid-template-areas:
         "nav nav nav nav nav"
         ". ad main . ."
@@ -58,7 +58,7 @@ body {
     color: white;
 }
 
-#quiz-button {
+.quiz-button {
     text-wrap: none;
     width: fit-content;
     color: white;
@@ -71,7 +71,7 @@ body {
     text-decoration: none;
 }
 
-a#quiz-button:hover {
+a.quiz-button:hover {
     color: rgb(60, 77, 118);
     text-decoration: double;
 }
@@ -93,9 +93,25 @@ a#quiz-button:hover {
     grid-area: ad;
 }
 
-#ad img{
+#ad img {
     width: 150px;
 }
+
+#references {
+    font-size: small;
+    
+}
+#references li {
+    margin: 5px;
+    list-style: none;
+}
+
+#references h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
 h1 {
     font-size: 1.8rem;
     text-align: center;
@@ -128,8 +144,13 @@ footer nav ul {
 }
 
 blockquote {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(127, 137, 137);
+    background-color: azure;
+    font-size: small;
     font-style: italic;
-    font-weight: bold;
+    font-weight: 100;
 }
 
 img {
