@@ -22,5 +22,41 @@
                 "d": "Europeiska Unionen"
             },
         "correctAnswer": "b"
+    },
+    {
+        "id": 3,
+        "question": "Hur många delmål ingår i mål 13 inom FN:s globala mål för hållbar utveckling?",
+        "options":
+            {
+                "a": "4",
+                "b": "3",
+                "c": "5",
+                "d": "Mål 13 har inga delmål"
+            },
+        "correctAnswer": "c"
+    },
+    {
+        "id": 4,
+        "question": "Vilket år kom världens länder överens om det så kallade Parisavtalet?",
+        "options":
+            {
+                "a": "2010",
+                "b": "2000",
+                "c": "2019",
+                "d": "2015"
+            },
+        "correctAnswer": "d"
+    },
+    {
+        "id": 5,
+        "question": "Enligt Parisavtalets mål, med hur många grader får den globala medeltemperaturen som mest öka?",
+        "options":
+            {
+                "a": "2,0°C",
+                "b": "1,5°C",
+                "c": "0,5°C",
+                "d": "3,0°C"
+            },
+        "correctAnswer": "a"
     }
 ]
