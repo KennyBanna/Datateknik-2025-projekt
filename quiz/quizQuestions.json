@@ -58,5 +58,29 @@
                 "d": "3,0°C"
             },
         "correctAnswer": "a"
+    },
+    {
+        "id": 6,
+        "question": "hur mycket CO2 utsläpp utgörs vid tillverkning av ny t-shirt?",
+        "options":
+            {
+                "a": "1kg",
+                "b": "4kg",
+                "c": "2.5kg",
+                "d": "3.5"
+            },
+        "correctAnswer": "c"
+    },
+    {
+        "id": 7,
+        "question": "Hur många gånger lägre miljö påverkan har återanvändning av kläder jämfört med nyproduktion? ",
+        "options":
+            {
+                "a": "100 gånger",
+                "b": "50 gånger",
+                "c": "65 gågner",
+                "d": "70 gånger"
+            },
+        "correctAnswer": "d"
     }
 ]
