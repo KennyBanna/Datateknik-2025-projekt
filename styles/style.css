@@ -156,3 +156,10 @@ blockquote {
 img {
     width: 100%;
 }
+
+.float-image {
+    float: right;
+    width: 40%;
+    margin: 0 0 15px 15px;
+    border-radius: 4px;
+}

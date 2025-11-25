@@ -82,5 +82,29 @@
                 "d": "70 gånger"
             },
         "correctAnswer": "d"
+    },
+    {
+        "id": 8,
+        "question": "Vilket av följande energislag har högst koldioxidutsläpp under en livstid?",
+        "options":
+        {
+                "a": "Solceller",
+                "b": "Kärnkraft",
+                "c": "Vindkraft",
+                "d": "Ekorrhjul"
+        },
+        "correctAnswer": "a"
+    },
+    {
+        "id": 9,
+        "question": "Vilka växthusgaser släpper ett kärnkraftverk direkt ut under drift?",
+        "options":
+        {
+                "a": "Endast koldioxid",
+                "b": "Koldioxid och dikväveoxid (lustgas)",
+                "c": "Koldioxid och kvävetrifluroid",
+                "d": "Inga växthusgaser"
+        },
+        "correctAnswer": "d"
     }
 ]

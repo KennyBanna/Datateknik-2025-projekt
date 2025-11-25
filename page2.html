@@ -1,21 +1,149 @@
 <head>
     <meta charset="utf-8" />
-    <title>Hållbar Utveckling</title>
+    <title>Kärnkraft</title>
     <meta
         name="description"
-        content="Project homepage for EITA20 datateknik"
+        content="Page about nuclear energy"
+    />
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="favicon.svg"
+    />
+    <link
+        rel="stylesheet"
+        href="styles/style.css"
     />
 </head>
 <html>
     <body>
         <nav id="top-menu">
-            <ul>
-                <li><a href="page1.html">1</a></li>
-                <li><a href="page2.html">2</a></li>
-                <li><a href="page3.html">3</a></li>
-                <li><a href="page4.html">4</a></li>
-            </ul>
-        </nav>
-        <h1>Hållbar utveckling</h1>
+            <a href="index.html">
+                    <img src="img/temp_logo.png" alt="Hem">
+            </a>
+
+            <div id="link-container">
+                <a href="page1.html">Placeholder 1</a>
+                <a href="page2.html">Kärnkraft</a>
+                <a href="page3.html">Placeholder 3</a>
+                <a href="page4.html">Placeholder 4</a>
+            </div>
+            <a
+                href="quiz.html"
+                class="quiz-button"
+                >Ta Quiz!</a
+            >
+        </nav> 
+
+        <section id="article-section">
+
+                <h1>Vikten av Kärnkraft</h1>
+                <h2>Världens mest energitäta energislag</h2>
+
+                <p>
+                        Hur vi producerar energi spelar en central roll i
+                        hållbar utveckling eftersom energisektorn står för den
+                        största delen av de globala koldioxidutsläppen. Enligt
+                        IEA (International Energy Agency) och IPCC
+                        (Intergovernmental Panel. On Climate Change) så kommer
+                        ungefär 40% av världens koldioxidutsläpp från el- och
+                        värmeproduktion.
+                </p>
+
+                <h3>Hur kärnkraft fungerar</h3>
+                <img src="img/nuclear_fuel_pellets.jpeg", alt="Uran-235", class="float-image">
+                <p>
+                        Kärnkraft är en fossilfri men ej förnybar energikälla
+                        baserad på uran. Uran-pellets, oftast av uran-235,
+                        placeras i bränslestavar i reaktorn. För att starta
+                        reaktionen tillförs neutroner från en extern källa. När
+                        en neutron träffar en urankärna delas den i två lättare
+                        atomkärnor och frigör energi och 2-3 nya neutroner.
+                        Några av dessa används för att klyva fler kärnor och på
+                        så vis hålla kedjereaktionen igång. Kärnklyvningen
+                        kallas för fission. Den frigjorda energin från fission
+                        omvandlas till värme, som värmer vatten till ånga.
+                        Ångan driver en turbin som i sin tur driver en
+                        generator som producerar elektricitet. Ångan förs
+                        därefter in i en kondensator och kyls tillbaka till
+                        vatten och återanvänds.
+                </p>
+
+                <h3>Utsläpp</h3>
+                <img src="img/nuclear_power_plant.jpeg", alt="Kärnkraftverk", class="float-image">
+                <p>
+                        Kärnkraftens klimatpåverkan är bland den lägsta bland
+                        de storskaliga energislagen. När man räknar på ett
+                        kärnkraftsverk fulla livscykel inklusive uranbrytning,
+                        byggnation, drift och avveckling så ligger utsläppen i
+                        intervallet 3-12g koldioxid per kWh (enligt IPCC och
+                        IEA). Jämförelsevis ligger landbaserad vindkraft på
+                        runt 10-15g koldioxid per kWh, solceller på 40-40g,
+                        naturgas på 400-500g och kolkraft på 800-1000g. Själva
+                        driften av reaktorn producerar i praktiken ingen
+                        koldioxid alls och siffran anges som 0g
+                        koldioxidutsläpp per kWh. De utsläpp som nämns i
+                        samband med kärnkraft kommer från livscykeln utanför
+                        driften.
+                </p>
+
+                <h3>Avfall</h3>
+                <p>
+                        Kärnkraftens avfall lyfts ofta fram som dess stora
+                        nackdel, men sanningen är att mängden som faktiskt
+                                uppstår är förvånansvärt liten. <b>En svensk
+                                        som får all sin el från kärnkraft under
+                                        hela sin livstid genererar ungefär
+                                        0,5kg högaktivt avfall, en mängd som
+                                ryms i en handflata. </b> Jämfört med fossila
+                        bränslen, vars förbränningsavfall sprids i atmosfären
+                        och inte kan samlas in så kan kärnavfallet säkert
+                        förslutas och hållas isolerat från miljön. Dessutom gör
+                        modern teknik att en stor del av avfallet kan
+                        återanvändas i framtida reaktorer, vilket minska den
+                        totala avfallsvolymen och gör kärnkraften ännu mer
+                        effektiv. Sverige och flera andra länder besitter även
+                        flera färdiga och vetenskapligt granskade lösningar för
+                        slutlig säker förvaring.
+                </p>
+
+                <div id="references">
+                        <h3>Källförteckning</h3>
+                        <ul>
+                                <li>
+                                        <b>SKB (Svensk kärnbränslehantering AB)</b>
+                                        <a target="_blank", href="https://skb.se/publication/2699385/R-13-17.pdf">Long-lived intermediate level waste from Swedish nuclear power plants</a>
+                                </li>
+                                <li>
+                                        <b>World-nuclear.org</b>
+                                        <a target="_blank", href="https://world-nuclear.org/information-library/energy-and-the-environment/carbon-dioxide-emissions-from-electricity">Carbon Dioxide Emissions From Electricity</a>
+                                </li>
+                                <li>
+                                        <b>Regeringen</b>
+                                        <a target="_blank", href="https://www.government.se/contentassets/b456d0d9763c451c9cfb626fed5b73b0/nuclear-waste-state-of-the-art-report-2022-sou-20227.pdf">Nuclear Waste</a>
+                                </li>
+                                <li>
+                                        <b>Förenta Nationernas Klimatpanel (IPCC)</b>
+                                        <a target="_blank", href="https://www.ipcc.ch/site/assets/uploads/2018/02/ar4-wg3-chapter4-1.pdf">Energy Supply</a>
+                                </li>
+                                <li>
+                                        <b>Vattenfall</b>
+                                        <a target="_blank", href="https://www.vattenfall.se/fokus/hallbarhet/sa-paverkar-karnkraft-miljon/">Så påverkas miljön av kärnkraft</a>
+                                </li>
+                        </ul>
+
+                        <p>Bilder</p>
+                        <ul>
+                                <li>
+                                        <b>Wikimedia</b>
+                                        <a target="_blank", href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Nuclear_fuel_pellets.jpeg">Uran-235</a>
+                                </li>
+                                <li>
+                                        <b>Unsplash</b>
+                                        <a target="_blank", href="https://unsplash.com/photos/a-factory-emits-steam-as-it-rises-into-the-sky-Wabt_yV-mEk">Kärnkraftverk</a>
+                                </li>
+                        </ul>
+                </div> 
+        </section>
     </body>
 </html>
