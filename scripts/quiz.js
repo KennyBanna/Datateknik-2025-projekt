@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var userAnwers = [];
     
     // questions kommer ifrån questions.js- filen
-    const questionData = questions;
+    var questionData = questions;
     const amountOfQuestions = questions.length;
 
     // References to DOM elements
