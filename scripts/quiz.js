@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        alert("You had " + correctAnswers + " out of " + amountOfQuestions + " correct answers");
+        alert("Du hade " + correctAnswers + " av " + amountOfQuestions + " rätta svar");
         open("index.html")
     }
 
