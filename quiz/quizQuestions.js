@@ -61,13 +61,13 @@ const questions = [
     },
     {
         "id": 6,
-        "question": "hur mycket CO2 utsläpp utgörs vid tillverkning av ny t-shirt?",
+        "question": "Hur mycket CO2 utsläpp utgörs vid tillverkning av ny t-shirt?",
         "options":
             {
-                "a": "1kg",
-                "b": "4kg",
-                "c": "2.5kg",
-                "d": "3.5"
+                "a": "1 kg",
+                "b": "4 kg",
+                "c": "2,5 kg",
+                "d": "3,5 kg"
             },
         "correctAnswer": "c"
     },
