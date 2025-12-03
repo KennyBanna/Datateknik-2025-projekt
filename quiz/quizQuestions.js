@@ -1,4 +1,4 @@
-[
+const questions = [
     {
         "id": 1,
         "question": "Vilket av dessa ämnen tillhör inte en av de tre huvudkategorierna i hållbar utveckling?",
@@ -107,4 +107,4 @@
         },
         "correctAnswer": "d"
     }
-]
+];
