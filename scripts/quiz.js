@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     
+    console.log(questions);
+
     var questionIndex = 0;
-    var questionData = null;
     var userAnwers = [];
-    var amountOfQuestions;
+    
+    // questions kommer ifrån questions.js- filen
+    var questionData = questions;
+    const amountOfQuestions = questions.length;
 
     // References to DOM elements
     const questionLabel = document.getElementById("question-label");
@@ -11,21 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("answer-button");
     
     button.addEventListener(("click"), () => answerQuestion());
-
-    async function loadQuestionsFromJsonFile() {
-        const response = await fetch('/quiz/quizQuestions.json');
-        const questionData = await response.json();
-
-        amountOfQuestions = await questionData.length;
-
-        return questionData;
-    } 
     
-    async function displayQuestion(){
+    function displayQuestion(){
 
-        if(questionData == null){
-            questionData = await loadQuestionsFromJsonFile();
-        }
+        questionData = questions;
 
         const question = questionData[questionIndex].question;
         const options = questionData[questionIndex].options;
@@ -53,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         userAnwers.push(answer);
         questionIndex ++
 
-        //If its the final questions - Display result and bring user back to home
+        //När alla frågor är besvarade
         if(questionIndex == amountOfQuestions){
             correctQuiz();
             return;
@@ -62,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displayQuestion();
     }
 
-    // Goes over user answers and scores the quiz
+    // Rättar frågorna, visar resultat och går tillbaks till index.html
     function correctQuiz(){
 
         var correctAnswers = 0;
