@@ -9,11 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     var questionData = questions;
     const amountOfQuestions = questions.length;
 
-    // References to DOM elements
+    // Referenser till DOM elements
     const questionLabel = document.getElementById("question-label");
     const questionNumberDisplay = document.getElementById("question-index-span");
     const button = document.getElementById("answer-button");
     
+    // Lägger till funktionen till knappen som en event-lyssnare
     button.addEventListener(("click"), () => answerQuestion());
     
     function displayQuestion(){
