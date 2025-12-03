@@ -106,5 +106,41 @@ const questions = [
                 "d": "Inga växthusgaser"
         },
         "correctAnswer": "d"
+    },
+    {
+        "id": 10,
+        "question": "Vad är den största miljöpåverkan som AI har enligt texten?",
+        "options":
+            {
+                "a": "Ökad vattenförbrukning",
+                "b": "Hög energiförbrukning och koldioxidutsläpp",
+                "c": "Minskad biologisk mångfald",
+                "d": "Ökad plastproduktion"
+            },
+        "correctAnswer": "b"
+    },
+    {
+        "id": 11,
+        "question": "Hur mycket koldioxid kan träningen av en enda AI-modell generera?",
+        "options":
+            {
+                "a": "Cirka 50 ton",
+                "b": "Cirka 100 ton",
+                "c": "Cirka 284 ton",
+                "d": "Cirka 500 ton"
+            },
+        "correctAnswer": "c"
+    },
+    {
+        "id": 12,
+        "question": "Hur jämförs utsläppen från en AI-modell med utsläpp från bilar?",
+        "options":
+            {
+                "a": "Motsvarar utsläpp från en bil under ett år",
+                "b": "Motsvarar utsläpp från fem bilar under deras livstid",
+                "c": "Motsvarar utsläpp från tio bilar under ett år",
+                "d": "Är mindre än utsläpp från en bil under hela dess livstid"
+            },
+        "correctAnswer": "b"
     }
 ];
