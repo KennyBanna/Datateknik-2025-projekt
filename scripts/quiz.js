@@ -13,13 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const questionLabel = document.getElementById("question-label");
     const questionNumberDisplay = document.getElementById("question-index-span");
     const button = document.getElementById("answer-button");
-    
+    const radionButtons = document.getElementsByName("answer");
+        
+
     // Lägger till funktionen till knappen som en event-lyssnare
     button.addEventListener(("click"), () => answerQuestion());
     
     function displayQuestion(){
-
-        questionData = questions;
+        
+        // Clearar alternativboxarna
+        for(i = 0; i < 4; i++){
+            radionButtons[i].checked = false;
+        }
 
         const question = questionData[questionIndex].question;
         const options = questionData[questionIndex].options;
@@ -31,19 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
             var element = document.getElementById(`label-${key}`);
             element.innerHTML = key + ": " + options[key];
         }
+    
     }
 
     function answerQuestion(){
 
-        var radionButtons = document.getElementsByName("answer");
         var answer = '';
         for(i = 0; i < 4; i++){
             if(radionButtons[i].checked){
                 answer = radionButtons[i].value;
                 break;
-            }   
+            }
         }
         
+        // Om inget svar har angivits så returnar funktionen
+        if(answer == ''){
+            return;
+        }
+
         userAnwers.push(answer);
         questionIndex ++
 
