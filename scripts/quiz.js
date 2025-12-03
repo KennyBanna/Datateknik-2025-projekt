@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
     var userAnwers = [];
     var amountOfQuestions;
 
+    // References to DOM elements
     const questionLabel = document.getElementById("question-label");
     const questionNumberDisplay = document.getElementById("question-index-span");
     const button = document.getElementById("answer-button");
+    
     button.addEventListener(("click"), () => answerQuestion());
 
-    // Function to load all questions in to an object from json file
     async function loadQuestionsFromJsonFile() {
         const response = await fetch('/quiz/quizQuestions.json');
         const questionData = await response.json();
@@ -61,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displayQuestion();
     }
 
+    // Goes over user answers and scores the quiz
     function correctQuiz(){
 
         var correctAnswers = 0;

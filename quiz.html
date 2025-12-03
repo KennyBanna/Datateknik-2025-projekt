@@ -1,54 +1,68 @@
 <html>
-    <head>
-        <title>Quiz</title>
-        <link
-        rel="stylesheet"
-        href="styles/style.css"
-        />
-        <link rel="stylesheet" href="styles/quizStyle.css">
-        <script src="scripts/quiz.js"></script>
-    </head>
-    <body>
-        <header>
-        </header>
-        <div id="quiz-container">
-            <h1>QUIZ</h1>
-            
-            <h2>Fråga <span id="question-index-span"></span></h2>
-            <label id="question-label"></label>
-            <div id="quiz-question-container">
 
-                <label id="label-a"></label>
-                <input type="radio" name="answer" id="input-a" value="a">
+<head>
+    <meta charset="utf-8"/>
+    <title>Quiz</title>
+    <link rel="stylesheet"
+          href="styles/style.css" />
+    <link rel="stylesheet"
+          href="styles/quizStyle.css">
+    <script src="scripts/quiz.js"></script>
+</head>
 
-                <label id="label-b"></label>
-                <input type="radio" name="answer" id="input-b" value="b">
-                
-                <label id="label-c"></label>
-                <input type="radio" name="answer" id="input-c" value="c">
-                
-                <label id="label-d"></label>
-                <input type="radio" name="answer" id="input-d" value="d">
-            </div>
-            <button id="answer-button" class="quiz-button">Svara</button>
+<body>
+    <header>
+    </header>
+    <div id="quiz-container">
+        <h1>QUIZ</h1>
 
+        <h2>Fråga <span id="question-index-span"></span></h2>
+        <label id="question-label"></label>
+        <div id="quiz-question-container">
+
+            <label id="label-a"></label>
+            <input type="radio"
+                   name="answer"
+                   id="input-a"
+                   value="a">
+
+            <label id="label-b"></label>
+            <input type="radio"
+                   name="answer"
+                   id="input-b"
+                   value="b">
+
+            <label id="label-c"></label>
+            <input type="radio"
+                   name="answer"
+                   id="input-c"
+                   value="c">
+
+            <label id="label-d"></label>
+            <input type="radio"
+                   name="answer"
+                   id="input-d"
+                   value="d">
         </div>
-        <footer>
-            <div><a href="https://www.ch.lu.se/">Lunds Universitet</a></div>
-            <div>
-                <p>
-                    <a href="https://www.snowflakeeducation.com/en/"
-                        >Snowflake Education</a
-                    >
-                </p>
-            </div>
-            <div>
-                <p>Oskar</p>
-                <p>Henrik</p>
-                <p>Essi</p>
-                <p>Seb</p>
-                <p>Filippa</p>
-            </div>
-        </footer>
-    </body>
+        <button id="answer-button"
+                class="quiz-button">Svara</button>
+
+    </div>
+    <footer>
+        <div><a href="https://www.ch.lu.se/">Lunds Universitet</a></div>
+        <div>
+            <p>
+                <a href="https://www.snowflakeeducation.com/en/">Snowflake Education</a>
+            </p>
+        </div>
+        <div>
+            <p>Oskar</p>
+            <p>Henrik</p>
+            <p>Essi</p>
+            <p>Seb</p>
+            <p>Filippa</p>
+        </div>
+    </footer>
+</body>
+
 </html>
