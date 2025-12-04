@@ -1,9 +1,13 @@
+
+/* Styling till index.html, page1.html, page2.html, page3.html och page4.html */
+
+
 html {
     padding: 0px;
     background-color: rgb(181, 216, 216);
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    /* TODO fixa helvetica NEU */
+    /* Styling för alla sidor s */
 }
 
 body,
@@ -11,6 +15,7 @@ div,
 nav,
 section {
     box-sizing: border-box;
+    /* Tar bort default padding som annars appliceras automatisk */
 }
 
 body {
@@ -25,6 +30,7 @@ body {
 
     margin: 0px;
     padding-top: 0px;
+    /* Lägger mall för hur sidans innehåll placeras. Navigation överst i sidan, text/innehåll i mitten och footer längst ner. Grid gör att sidan anpassar sig i olika skärm storlekar*/
 }
 
 /* TOP menu style */
@@ -37,6 +43,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    /* Lägger mall för hur menyns innehåll bör placeras. Använder flex för att sidor ska kunna anpassa sig i olika skärm storlekar. */
 }
 
 #link-container {
@@ -44,6 +51,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    /* Mall till undersidors länkar */
 }
 
 #link-container a {
@@ -52,10 +60,12 @@ body {
     text-wrap: nowrap;
     text-decoration: none;
     text-align: center;
+    /* Styling till undersidors länkar, stylar texten */
 }
 
 #link-container a:hover {
     color: white;
+    /* Ändrar färg till vitt när muspekaren är på undersidors länkar */
 }
 
 .quiz-button {
@@ -69,52 +79,63 @@ body {
     background-color: rgb(163, 183, 130);
     padding: 5px 15px 5px 15px;
     text-decoration: none;
+    /* Styling till quiz knappen */
 }
 
 a.quiz-button:hover {
     color: rgb(60, 77, 118);
     text-decoration: double;
+    /* Quiz knappens text ändrar färg när muspekaren är på knappen */ 
 }
 /* END top menuy style */
 
+/* Styling till mitten del av sidor där allt innehåll/text placeras */
 #article-section {
     margin-left: 20px;
     margin-right: 20px;
     grid-area: main;
 }
 
+/* Styling till källförteckning sektionen */
 #references {
     margin-top: 10px;
     border-top: 1px solid gray;
 }
 
+/* Styling till bilder */
 #ad {
     margin-top: 50px;
     grid-area: ad;
+    /* Mall för bilder */
 }
 
 #ad img {
     width: 150px;
 }
 
+
 #references {
     font-size: small;
     
 }
+
 #references li {
     margin: 5px;
     list-style: none;
+    /* Styling till källförteckning lista */
 }
 
 #references h2{
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
+    /* Styling till källförtecknings underrubrik */
 }
 
 h1 {
     font-size: 1.8rem;
     text-align: center;
+    /* Huvud rubrik */
 }
 
 h2 {
@@ -131,12 +152,14 @@ footer {
     gap: 25px;
     grid-area: footer;
     margin-top: 50px;
+    /* Lägger mall till footer sektionen */
 }
 
 footer div {
     padding: 25px;
     font-size: 0.8rem;
-    color: rgb(59, 57, 72);
+    color: rgb(59, 57, 72); 
+    /* Styling till footers sektionens cotainer */
 }
 
 footer nav ul {
@@ -150,7 +173,8 @@ blockquote {
     background-color: azure;
     font-size: small;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 100; 
+     /* Styling till en liten ruta i index.html som innehåller hållbarhets definition */
 }
 
 img {
@@ -161,5 +185,6 @@ img {
     float: right;
     width: 40%;
     margin: 0 0 15px 15px;
-    border-radius: 4px;
+    border-radius: 4px; 
+    /* Placerar bilder till vänster i sin egen container */
 }

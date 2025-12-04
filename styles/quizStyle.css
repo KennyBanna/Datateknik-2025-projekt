@@ -1,10 +1,15 @@
+/* Styling till quiz sidan */
+
 body {
     grid-template-areas: "header header header"
                          ". quiz ."
                          " footer footer footer";
     grid-template-columns: 100px auto 100px;
     grid-template-rows: 100px auto 300px;
+    /* Mall för hur quiz sidan ska se ut, header högst upp, quiz frågor i mitten och footer längst ner i sidan */
 }
+
+
 header {
     grid-area: header;
 }
@@ -15,6 +20,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Styling till quiz container */
 }
 #quiz-question-container{
     margin-top: 20px;
@@ -22,12 +28,15 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    /* Styling till innehåll av quiz container */
 }
 
 button:hover{
     color: rgb(74, 105, 132);
+    /* knappen " Svara " ändrar färg när muspekaren är på knappen */
 }
 
 footer {
     grid-area: footer;
+    /* Footer hamnar längst ner i sidan */
 }
